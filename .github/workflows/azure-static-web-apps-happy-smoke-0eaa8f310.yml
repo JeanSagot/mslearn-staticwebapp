@@ -4,12 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
       - angular-app/**
       - .github/workflows/azure-static-web-apps-happy-smoke-0eaa8f310.yml
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+    paths:
       - angular-app/**
       - .github/workflows/azure-static-web-apps-happy-smoke-0eaa8f310.yml
 jobs:
